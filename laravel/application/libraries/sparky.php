@@ -15,17 +15,17 @@ class Sparky
 		{
 			$styleFrag = $dom->createDocumentFragment();
 			$styleFrag->appendXML('
-				<link type="text/css" rel="stylesheet" href="http://sparkycms.com/css/sparky.css" />
+				<link type="text/css" rel="stylesheet" href="/css/sparky.css" />
 				<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/smoothness/jquery-ui.css" />
-				<link type="text/css" rel="stylesheet" href="http://sparkycms.com/css/elfinder/elfinder.min.css" />
-				<link type="text/css" rel="stylesheet" href="http://sparkycms.com/css/elfinder/theme.css" />
+				<link type="text/css" rel="stylesheet" href="/css/elfinder/elfinder.min.css" />
+				<link type="text/css" rel="stylesheet" href="/css/elfinder/theme.css" />
 				');
 			$jsFrag = $dom->createDocumentFragment();
 			$jsFrag->appendXML('<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-								<script type="text/javascript" src="http://sparkycms.com/js/sparky.js"></script>
-							    <script type="text/javascript" src="http://sparkycms.com/js/ckeditor/ckeditor.js"></script>
-							    <script type="text/javascript" src="http://sparkycms.com/js/ckeditor/adapters/jquery.js"></script>
-							    <script type="text/javascript" src="http://sparkycms.com/js/elfinder/elfinder.min.js"></script>
+								<script type="text/javascript" src="/js/sparky.js"></script>
+							    <script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
+							    <script type="text/javascript" src="/js/ckeditor/adapters/jquery.js"></script>
+							    <script type="text/javascript" src="/js/elfinder/elfinder.min.js"></script>
 							   ');
 
 			$h->appendChild($styleFrag);
