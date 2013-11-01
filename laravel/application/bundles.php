@@ -37,9 +37,5 @@ return array(
 	'docs' => array('handles' => 'docs'),
 	'text' => array(
 		'auto' => true
-	),
-	'properties' => array(
-		'auto' => true
 	)
-
 );
