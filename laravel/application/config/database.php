@@ -1,0 +1,1 @@
+<?php include path('configdir').'database.php'; return $database;

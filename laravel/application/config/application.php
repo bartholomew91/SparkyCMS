@@ -1,0 +1,1 @@
+<?php include path('configdir').'application.php'; return $application;
