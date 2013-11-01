@@ -1,0 +1,436 @@
+#sparky_admin_header {
+	position: fixed;
+	width: 100%;
+	z-index: 9998;
+	border-bottom: 1px solid #acacac;
+}
+
+#sparky_admin_header ul {
+	width: 100%;
+	background: url(/img/admin-header-bg.png) repeat-x;
+	height: 39px;
+}
+
+#sparky_admin_header ul li {
+	float: left;
+}
+
+#sparky_admin_header ul li a {
+	display: block;
+	color: #000;
+	padding: 0 12px 0 12px;
+	height: 39px;
+	line-height: 39px;
+}
+
+#sparky_admin_header ul li a:hover {
+	background: url(/img/admin-header-bg-hover.png) repeat-x;
+}
+
+#sparky_module_handle {
+	background: url(/img/modules-bg.png) no-repeat;
+	width: 25px;
+	height: 81px;
+	position: absolute;
+	top: 140px;
+	left: 100%;
+	right: -81px;
+	z-index: 9999;
+}
+
+#sparky_module_handle:hover {
+	cursor: pointer;
+}
+
+#module_bar {
+	width: 10%;
+	height: 100%;
+	background: #efeff0;
+	position: fixed;
+	top: 39px;
+	left: -10%;
+	border-right: 1px solid #c3c3c3;
+	z-index: 9999;
+}
+
+.sparky_module_header {
+	background: #000 url(/img/modules/bg-module.png) repeat-x;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	height: 26px;
+}
+
+.sparky_module_header:hover {
+	cursor: move;
+}
+
+.sparky_module_header_name {
+	background: #000 url(/img/modules/module-name-bg.png) repeat-x;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFF;
+	float: left;
+	-moz-border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: normal;
+	height: 26px;
+}
+
+.sparky_module_header_link a {
+	float: left;
+	color: #FFF;
+	border-right: 1px solid #000;
+	height: 26px;
+	font-size: 13px;
+	line-height: 26px;
+	padding: 0 10px 0 10px;
+}
+
+.sparky_module_header_link a:hover {
+	background: #000;
+}
+
+.sparky_module_delete a {
+	float: left;
+	background: url(http://sparkycms.com/img/ui/btn-delete.png) no-repeat center center;
+	border-right: 1px solid #000;
+	height: 26px;
+	width: 25px;
+}
+
+.sparky_modal_overlay {
+	z-index: 9998;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background: #FFF;
+	opacity: 0.3;
+	filter: alpha(opacity = 50);
+	zoom: 1;
+}
+
+.sparky_modal {
+	z-index: 9999;
+	position: fixed;
+	width: 800px;
+	height: 500px;
+	overflow: hidden;
+	/*border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;*/
+	border: 1px solid #b5b5b5;
+	background: #f9f9f9;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -250px;
+	//box-shadow: #000 0 1px 20px;
+}
+
+.sparky_modal header {
+	height: 39px;
+	background: url(http://sparkycms.com/img/admin-header-bg-hover.png) repeat-x;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+.sparky_modal header h1 {
+	height: 39px;
+	line-height: 39px;
+	font-size: 20px;
+}
+
+.sparky_modal .sparky_modal_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.sparky_modal nav {
+	position: relative;
+	width: 199px;
+	height: 100%;
+	background: #EFEFF0;
+	float: left;
+	border-right: 1px solid #C3C3C3;
+}
+
+.sparky_modal nav ul {
+	margin: 0;
+	list-style-type: none;
+}
+
+.sparky_modal nav ul li a {
+	display: block;
+	width: 199px;
+	height: 35px;
+	color: black;
+	line-height: 35px;
+	border-bottom: 1px solid #BDBDBD;
+	font-size: 15px;
+	text-indent: 15px;
+	background: #EFEFF0;
+}
+
+.sparky_modal nav ul li a.active {
+	background: #F9F9F9;
+	width: 200px;
+}
+
+.sparky_modal .body {
+	float: left;
+	width: 590px;
+	margin-left: 10px;
+	height: 405px;
+	overflow-y: auto;
+	padding-top: 10px;
+}
+
+.sparky_modal .body #editor {
+	width: 580px;
+}
+
+.sparky_modal .body h1 {
+	background: transparent !important;
+}
+
+.sparky_modal .buttons {
+	float: left;
+	width: 590px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.sparky_modal .buttons input[type="submit"] {
+	height: 34px;
+	border: 1px solid #c4c4c4;
+	background: url(http://sparkycms.com/img/ui/btn-normal-bg.png) repeat-x;
+	padding: 0 14px 0 14px;
+	line-height: 34px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.sparky_modal .buttons input[type="submit"]:hover {
+	background: url(http://sparkycms.com/img/ui/btn-normal-bg.png) repeat-x;
+	box-shadow: #dbdbdb 0 0 5px;
+}
+
+.sparky_modal .buttons input[type="submit"]:active, .sparky_modal .buttons input[type="submit"]:focus {
+	background: url(http://sparkycms.com/img/ui/btn-pressed-bg.png) repeat-x;
+}
+
+.sparky_modal .buttons input.disabled {
+	background: url(http://sparkycms.com/img/ui/btn-disabled-bg.png) repeat-x;
+}
+
+.sparky_modal .buttons button {
+	border: 1px solid #ccc;
+	background: #c6c6c6;
+	text-align: center;
+	padding: 5px;
+	font-size: 13px;
+}
+
+.sparky_modal .buttons button:hover {
+	cursor: pointer;
+}
+
+#admin_bar {
+	z-index: 9000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #dcdfe1;
+	border-bottom: 1px solid #87abe0;
+}
+
+#admin_bar nav {
+	float: left;
+	margin-top: 7px;
+}
+
+#admin_bar ul {
+	list-style-type: none;
+	position: absolute;
+}
+
+#admin_bar ul li {
+	float: left;
+	margin-left: 20px;
+}
+
+#admin_bar ul li a {
+	display: block;
+	height: 35px;
+	text-align: center;
+	line-height: 37px;
+	color: #FFF;
+	background: url(http://sparkycms.com/img/ui/bg-button-normal.png) repeat-x;
+	border: 1px solid #bdbdbd;
+	padding: 0 10px 0 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #000;
+	margin-bottom: 6px;
+}
+
+#admin_bar ul li a:hover, #admin_bar ul li a.selected {
+	background: url(http://sparkycms.com/img/ui/bg-button-hover.png) repeat-x;
+	border: 1px solid #236be1;
+	box-shadow: #87abe0 0 0 10px;
+}
+
+#admin_bar ul li a.disabled {
+	background: url(http://sparkycms.com/img/ui/bg-button-disabled.png) repeat-x;
+	color: #a4a6a7;
+}
+
+#admin_bar ul li ul {
+	position: absolute;
+	top: 100%;
+	min-width: 100px;
+	max-width: 200px;
+	background: #dcdfe1;
+	margin: 0;
+	visibility: hidden;
+	border: 1px solid #87abe0;
+	border-top: none;
+}
+
+#admin_bar ul li ul li {
+	float: none;
+	margin: 0;
+}
+
+#admin_bar ul li ul li a {
+	display: block;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #87abe0;
+	color: #000;
+	width: 100px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+#admin_bar ul li ul li a:hover {
+	background: #f9f9f9;
+	border: none;
+	border-bottom: 1px solid #87abe0;
+	box-shadow: none;
+	color: #000;
+	width: 100px;
+}
+
+#admin_bar #user_info {
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	margin-right: 30px;
+}
+
+#admin_bar #user_info p {
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#module_bar ul li a {
+	line-height: 35px;
+	display: block;
+	height: 35px;
+	width: 100%;
+	background: #FFF url(http://sparkycms.com/img/ui/bg-button-normal.png) repeat-x;
+	font-size: 15px;
+	color: #000;
+	text-indent: 15px;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+.drop_area {
+	height: 10px;
+}
+
+.drop_area_hover {
+	background: #c6c6c6;
+}
+
+.placeholder {
+	background-color: #cfcfcf;
+}
+
+.ui-nestedSortable-error {
+	background: #fbe3e4;
+	color: #8a1f11;
+}
+
+ol#sparky_nav_ol, ol#sparky_nav_ol ol {
+	margin: 0 0 0 10px;
+	padding: 0;
+	list-style-type: none;
+}
+
+ol#sparky_nav_ol {
+	margin: 5px 0;
+}
+
+#sparky_nav_ol li {
+	margin: 7px 0 0 0;
+	padding: 0;
+}
+
+#sparky_nav_ol li div {
+	color: #fff;
+	background: url(http://sparkycms.com/img/modules/bg-module.png) repeat-x;
+	height: 26px;
+	line-height: 26px;
+	margin: 0;
+	text-indent: 15px;
+}
+
+#sparky_nav_ol li div.sortable {
+	cursor: move;
+}
+
+#sparky_nav_ol {
+	width: 575px;
+}
+
+.sparky_module_edit {
+	background: url('http://sparkycms.com/img/modules/bg-module.png') repeat-x;
+	position: absolute;
+	z-index: 9999;
+	min-width: 150px;
+	display: none;
+}
+
+.sparky_module_edit ul {
+	padding: 0;
+}
+
+.sparky_module_edit ul li {
+	background: none;
+	display: inline-block;
+}
+
+.sparky_module_edit ul li a {
+	color: #FFF;
+}

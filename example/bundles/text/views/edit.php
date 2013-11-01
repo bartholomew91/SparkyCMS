@@ -1,0 +1,1 @@
+<textarea id="ckeditor" name="content"><?php echo ( ! is_null($text) ) ? $text->content : null; ?></textarea>
